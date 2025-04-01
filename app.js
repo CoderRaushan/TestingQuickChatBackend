@@ -20,6 +20,7 @@ import './AuthConfig/passportGitHub.js';
 app.use(githubRoutes);
 // for facebook
 
+
 // for linkedin
 import "./AuthConfig/passportLinkedin.js";
 import LinkedinRoutes from "./routes/LinkedinRoutes.js"
@@ -33,7 +34,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(urlencoded({extended:true}));
 const corsOptions={
-    origin:["http://localhost:5173"],
+    origin:["http://localhost:5173","https://rausinsta.netlify.app"],
     credentials:true,
 }
 app.use(cors(corsOptions));
