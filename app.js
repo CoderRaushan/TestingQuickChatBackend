@@ -20,7 +20,6 @@ import './AuthConfig/passportGitHub.js';
 app.use(githubRoutes);
 // for facebook
 
-
 // for linkedin
 import "./AuthConfig/passportLinkedin.js";
 import LinkedinRoutes from "./routes/LinkedinRoutes.js"
